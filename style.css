@@ -10,6 +10,7 @@ body {
     margin: 0;
     background: #f5f5f0;
     color: #111;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.1;
@@ -33,19 +34,26 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    
+
     display: grid;
     grid-template-columns: 1fr auto;
+
     align-items: center;
 
     padding: 14px 20px;
 
     border-bottom: 1px solid #111;
+
     background: #f5f5f0;
 }
 
 .logo {
     font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -67,14 +75,19 @@ header {
 
 .intro-name {
     font-size: clamp(80px, 17vw, 260px);
+
     line-height: .78;
+
     letter-spacing: -0.075em;
+
     text-transform: uppercase;
 }
 
 .intro-info {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 20px;
 
     max-width: 1000px;
@@ -91,81 +104,143 @@ header {
     border-bottom: 1px solid #111;
 
     font-size: 12px;
+
     text-transform: uppercase;
 }
 
 
 /* =========================
-   PROJECTS
+   FEATURED PROJECT
    ========================= */
 
-.project {
+.featured-project {
     padding: 20px;
 
     border-bottom: 1px solid #111;
 }
 
-.project-info {
+.featured-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #deded8;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+.featured-info {
     display: grid;
-    grid-template-columns: 50px 1fr 1fr;
+
+    grid-template-columns: 50px 1fr auto;
 
     gap: 20px;
 
     align-items: baseline;
 
-    margin-bottom: 30px;
+    padding-top: 15px;
 }
 
-.project-number {
-    opacity: .45;
-}
-
-.project h2 {
+.featured-info h2 {
     margin: 0;
 
     font-size: clamp(30px, 4vw, 65px);
-    line-height: .9;
-    letter-spacing: -0.045em;
-    font-weight: 400;
-}
 
-.project-type {
-    text-align: right;
+    line-height: .9;
+
+    letter-spacing: -0.045em;
+
+    font-weight: 400;
 }
 
 
 /* =========================
-   IMAGE PLACEHOLDERS
+   PROJECT GRID
    ========================= */
 
-.project-image {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+.project-grid {
+    display: grid;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    border-bottom: 1px solid #111;
+}
+
+.grid-project {
+    padding: 15px;
+
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+.grid-project:nth-child(3n) {
+    border-right: none;
+}
+
+.grid-image {
+    width: 100%;
+
+    margin-bottom: 15px;
 
     background: #deded8;
 
-    font-size: 12px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
 }
 
-.project-image-small {
-    width: 65%;
-    margin-left: auto;
+.image-square {
+    aspect-ratio: 1 / 1;
+}
 
+.image-tall {
+    aspect-ratio: 3 / 4;
+}
+
+.image-wide {
     aspect-ratio: 4 / 3;
 }
 
-.project-image-wide {
-    aspect-ratio: 2 / 1;
+.grid-info {
+    display: grid;
+
+    grid-template-columns: 30px 1fr;
+
+    gap: 10px;
+
+    align-items: start;
 }
 
-.project-image-tall {
-    width: 60%;
+.grid-info span:first-child {
+    opacity: .45;
+}
 
-    aspect-ratio: 3 / 4;
+.grid-info h2 {
+    margin: 0 0 6px 0;
+
+    font-size: 22px;
+
+    line-height: .95;
+
+    letter-spacing: -0.035em;
+
+    font-weight: 400;
+}
+
+.grid-info p {
+    margin: 0;
+
+    font-size: 11px;
 }
 
 
@@ -181,6 +256,7 @@ header {
     padding: 20px;
 
     display: grid;
+
     grid-template-columns: 2fr 1fr;
 
     gap: 40px;
@@ -190,7 +266,9 @@ header {
 
 .about-description {
     font-size: clamp(35px, 5vw, 75px);
+
     line-height: .93;
+
     letter-spacing: -0.045em;
 }
 
@@ -210,6 +288,7 @@ header {
     margin-bottom: 8px;
 
     font-size: 11px;
+
     opacity: .5;
 }
 
@@ -220,6 +299,7 @@ header {
 
 footer {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
 
     padding: 14px 20px;
@@ -244,6 +324,10 @@ footer div:nth-child(3) {
         grid-template-columns: 1fr auto;
     }
 
+    nav {
+        gap: 15px;
+    }
+
     .intro {
         min-height: 75vh;
     }
@@ -254,23 +338,32 @@ footer div:nth-child(3) {
 
     .intro-info {
         grid-template-columns: 1fr 1fr;
+
         gap: 15px;
     }
 
-    .project-info {
-        grid-template-columns: 35px 1fr;
-        gap: 10px;
+    .featured-info {
+        grid-template-columns: 30px 1fr;
     }
 
-    .project-type {
+    .featured-info > span:last-child {
         grid-column: 2;
-        text-align: left;
     }
 
-    .project-image,
-    .project-image-small,
-    .project-image-tall {
-        width: 100%;
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-project:nth-child(3n) {
+        border-right: 1px solid #111;
+    }
+
+    .grid-project:nth-child(2n) {
+        border-right: none;
+    }
+
+    .grid-info h2 {
+        font-size: 18px;
     }
 
     .about-content {
@@ -283,6 +376,7 @@ footer div:nth-child(3) {
 
     footer {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
 
