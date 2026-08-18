@@ -516,6 +516,11 @@ footer div:nth-child(3) {
     height: auto;
 }
 
+.project-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
 /* NEXT PROJECT */
 
 .next-project {
