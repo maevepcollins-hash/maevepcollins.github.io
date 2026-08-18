@@ -449,11 +449,11 @@ footer div:nth-child(3) {
 
 .featured-image {
     width: 100%;
-    overflow: hidden;
 }
 
 .featured-image a {
     display: block;
+    width: 100%;
 }
 
 .featured-image img {
