@@ -412,13 +412,15 @@ footer div:nth-child(3) {
 }
 
 .project-title {
-    font-size: clamp(70px, 13vw, 190px);
+    font-size: clamp(70px, 11vw, 190px);
 
     line-height: .8;
 
     letter-spacing: -0.07em;
 
     text-transform: uppercase;
+
+    padding-top: 20px;
 }
 
 .project-meta {
