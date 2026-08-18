@@ -498,12 +498,11 @@ footer div:nth-child(3) {
 /* IMAGE GALLERY */
 
 .project-images {
+    width: 100%;
     padding: 20px;
 
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     gap: 20px;
 
     border-bottom: 1px solid #111;
@@ -511,14 +510,8 @@ footer div:nth-child(3) {
 
 .project-images img {
     display: block;
-
     width: 100%;
     height: auto;
-}
-
-.project-images {
-    grid-template-columns: 1fr;
-    gap: 15px;
 }
 
 /* NEXT PROJECT */
