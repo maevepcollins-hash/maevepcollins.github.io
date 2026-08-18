@@ -479,13 +479,13 @@ footer div:nth-child(3) {
 }
 
 .project-label {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .project-description-text {
     max-width: 900px;
 
-    font-size: clamp(35px, 5vw, 70px);
+    font-size: clamp(35px, 3vw, 70px);
 
     line-height: .93;
 
@@ -546,8 +546,8 @@ footer div:nth-child(3) {
     }
 
     .project-title {
-        padding-top: 10px;
-        font-size: 13vw;
+        padding-top: 20px;
+        font-size: 10vw;
     }
 
     .project-meta {
