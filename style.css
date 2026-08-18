@@ -241,6 +241,23 @@ nav {
     font-size: 11px;
 }
 
+/* =========================
+VIDEOS
+   ========================= */
+
+.flip-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.flip-video video {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
 
 /* =========================
    ABOUT
