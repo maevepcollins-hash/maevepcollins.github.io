@@ -447,6 +447,20 @@ footer div:nth-child(3) {
     height: auto;
 }
 
+.featured-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured-image a {
+    display: block;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* DESCRIPTION */
 
