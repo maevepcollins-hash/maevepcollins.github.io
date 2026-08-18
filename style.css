@@ -42,7 +42,7 @@ header {
 
     padding: 14px 20px;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 
     background: #f5f5f0;
 }
@@ -70,7 +70,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .intro-name {
@@ -101,7 +101,7 @@ nav {
 .section-label {
     padding: 14px 20px;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 
     font-size: 12px;
 
@@ -116,7 +116,7 @@ nav {
 .featured-project {
     padding: 20px;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .featured-image {
@@ -168,14 +168,14 @@ nav {
 
     gap: 0;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .grid-project {
     padding: 15px;
 
-    border-right: 1px solid #111;
-    border-bottom: 1px solid #111;
+    border-right: 1px solid #3f4150;
+    border-bottom: 1px solid #3f4150;
 }
 
 .grid-project:nth-child(3n) {
@@ -288,13 +288,13 @@ VIDEOS
 }
 
 .about-facts {
-    border-top: 1px solid #111;
+    border-top: 1px solid #3f4150;
 }
 
 .about-facts div {
     padding: 12px 0;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .about-facts span {
@@ -370,7 +370,7 @@ footer div:nth-child(3) {
     }
 
     .grid-project:nth-child(3n) {
-        border-right: 1px solid #111;
+        border-right: 1px solid #3f4150;
     }
 
     .grid-project:nth-child(2n) {
@@ -423,7 +423,7 @@ footer div:nth-child(3) {
     flex-direction: column;
     justify-content: space-between;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .project-title {
@@ -454,7 +454,7 @@ footer div:nth-child(3) {
 .project-hero-image {
     width: 100%;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .project-hero-image img {
@@ -492,7 +492,7 @@ footer div:nth-child(3) {
 
     min-height: 50vh;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .project-label {
@@ -520,7 +520,7 @@ footer div:nth-child(3) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .project-images img {
@@ -550,7 +550,7 @@ footer div:nth-child(3) {
     flex-direction: column;
     justify-content: space-between;
 
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .next-project a {
