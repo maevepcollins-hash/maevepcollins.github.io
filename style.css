@@ -386,3 +386,167 @@ footer div:nth-child(3) {
     }
 
 }
+
+
+/* =========================
+   PROJECT PAGES
+   ========================= */
+
+.project-page {
+    width: 100%;
+}
+
+
+/* PROJECT INTRO */
+
+.project-intro {
+    padding: 20px;
+
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #111;
+}
+
+.project-title {
+    font-size: clamp(70px, 13vw, 190px);
+
+    line-height: .8;
+
+    letter-spacing: -0.07em;
+
+    text-transform: uppercase;
+}
+
+.project-meta {
+    display: grid;
+
+    grid-template-columns: 50px 1fr auto;
+
+    gap: 20px;
+
+    align-items: end;
+}
+
+
+/* HERO */
+
+.project-hero-image {
+    width: 100%;
+
+    border-bottom: 1px solid #111;
+}
+
+.project-hero-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* DESCRIPTION */
+
+.project-description {
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 40px;
+
+    min-height: 50vh;
+
+    border-bottom: 1px solid #111;
+}
+
+.project-label {
+    font-size: 12px;
+}
+
+.project-description-text {
+    max-width: 900px;
+
+    font-size: clamp(35px, 5vw, 70px);
+
+    line-height: .93;
+
+    letter-spacing: -0.045em;
+}
+
+
+/* IMAGE GALLERY */
+
+.project-images {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #111;
+}
+
+.project-images img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* NEXT PROJECT */
+
+.next-project {
+    padding: 20px;
+
+    min-height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #111;
+}
+
+.next-project a {
+    font-size: clamp(40px, 7vw, 100px);
+
+    line-height: .9;
+
+    letter-spacing: -0.05em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .project-intro {
+        min-height: 60vh;
+    }
+
+    .project-title {
+        font-size: 18vw;
+    }
+
+    .project-meta {
+        grid-template-columns: 30px 1fr;
+    }
+
+    .project-meta div:last-child {
+        grid-column: 2;
+    }
+
+    .project-description {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
