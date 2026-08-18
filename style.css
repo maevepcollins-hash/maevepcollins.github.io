@@ -500,8 +500,9 @@ footer div:nth-child(3) {
 .project-images {
     padding: 20px;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
 
@@ -514,7 +515,6 @@ footer div:nth-child(3) {
     width: 100%;
     height: auto;
 }
-
 
 /* NEXT PROJECT */
 
