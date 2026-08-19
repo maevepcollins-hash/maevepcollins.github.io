@@ -192,8 +192,6 @@ nav {
 
     margin-bottom: 15px;
 
-    background: #deded8;
-
     display: flex;
 
     align-items: center;
@@ -204,6 +202,7 @@ nav {
 
 .image-square {
     aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .image-tall {
@@ -288,7 +287,7 @@ VIDEOS
 }
 
 .about-description {
-    font-size: clamp(35px, 5vw, 75px);
+    font-size: clamp(35px, 5vw, 65px);
 
     line-height: .93;
 
