@@ -16,11 +16,20 @@ body {
     line-height: 1.1;
 }
 
+/* LINK HOVER GLOW */
+
 a {
     color: inherit;
     text-decoration: none;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
+a:hover {
+    text-shadow:
+        0 0 3px currentColor,
+        0 0 7px currentColor,
+        0 0 12px currentColor;
+}
 
 /* =========================
    HEADER
@@ -590,16 +599,3 @@ footer div:nth-child(3) {
 
 }
 
-/* LINK HOVER GLOW */
-
-a {
-    text-decoration: none;
-    transition: text-shadow 0.3s ease, color 0.3s ease;
-}
-
-a:hover {
-    text-shadow:
-        0 0 5px currentColor,
-        0 0 10px currentColor,
-        0 0 20px currentColor;
-}
