@@ -217,6 +217,8 @@ nav {
     gap: 10px;
 
     align-items: start;
+
+    padding-top: 10px;
 }
 
 .grid-info span:first-child {
