@@ -194,7 +194,7 @@ nav {
 
     display: flex;
 
-    align-items: center;
+    align-items: top;
     justify-content: center;
 
     font-size: 11px;
@@ -211,6 +211,14 @@ nav {
 
 .image-wide {
     aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.image-wide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .grid-info {
