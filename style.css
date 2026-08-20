@@ -291,13 +291,13 @@ VIDEOS
 
     gap: 40px;
 
-    min-height: 70vh;
+    min-height: 91vh;
 }
 
 .about-description {
-    font-size: clamp(35px, 5vw, 55px);
+    font-size: clamp(35px, 5vw, 50px);
 
-    line-height: .93;
+    line-height: .97;
 
     letter-spacing: -0.045em;
 }
