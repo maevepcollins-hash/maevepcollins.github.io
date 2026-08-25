@@ -705,7 +705,7 @@ footer div:nth-child(3) {
 /* HEADER */
 
 .art-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
@@ -725,6 +725,9 @@ footer div:nth-child(3) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     letter-spacing: .05em;
+
+      background: #3f4150;
+      border-bottom: 1px solid #f5f5f0;
 }
 
 .art-logo {
@@ -833,9 +836,8 @@ footer div:nth-child(3) {
    ========================= */
 
 .studio-header {
-    background: transparent;
-    border-bottom: none;
-    
+    background: #3f4150;
+    border-bottom: 1px solid #f5f5f0;
     color: #e8e5dc;
     
     grid-template-columns: 1fr auto 1fr;
