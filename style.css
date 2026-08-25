@@ -279,7 +279,7 @@ VIDEOS
    ========================= */
 
 .about {
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #3f4150;
 }
 
 .about-content {
@@ -675,4 +675,182 @@ footer div:nth-child(3) {
         position: relative;
     }
 
+}
+
+.cv-entry h3 {
+    font-weight: 700;
+}
+
+.cv-intro h1 {
+    font-size: 5rem;
+}
+
+
+
+/* =========================
+   FINE ART ARCHIVE
+   ========================= */
+
+.art-page {
+    background: #3f4150;
+    color: #f5f5f0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.art-page a {
+    color: inherit;
+}
+
+
+/* HEADER */
+
+.art-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 25px;
+
+    border: none;
+
+    background: transparent;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: .05em;
+}
+
+.art-logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* GALLERY */
+
+.art-gallery {
+    width: 100%;
+    padding: 120px 7vw 150px;
+}
+
+
+/* INTRO */
+
+.art-intro {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 80px;
+}
+
+.art-intro p {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.art-intro h1 {
+    margin: 0;
+
+    font-size: clamp(80px, 15vw, 230px);
+    line-height: .75;
+    letter-spacing: -.07em;
+    font-weight: normal;
+}
+
+
+/* ARTWORK */
+
+.art-piece {
+    margin: 0;
+}
+
+.art-piece img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* CAPTIONS */
+
+.art-piece figcaption {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: .04em;
+
+    opacity: .6;
+}
+
+
+/* LARGE PIECE */
+
+.art-piece-large {
+    width: 72%;
+    margin-left: 8%;
+    margin-bottom: 25vh;
+}
+
+
+/* SMALL PIECE */
+
+.art-piece-small {
+    width: 35%;
+    margin-left: 52%;
+    margin-bottom: 30vh;
+}
+
+
+/* WIDE PIECE */
+
+.art-piece-wide {
+    width: 85%;
+    margin-left: 0;
+    margin-bottom: 20vh;
+}
+
+/* =========================
+   STUDIO / FINE ART HEADER
+   ========================= */
+
+.studio-header {
+    background: transparent;
+    border-bottom: none;
+    
+    color: #e8e5dc;
+    
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.studio-header .studio-archive {
+    grid-column: 2;
+    
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.studio-header nav {
+    grid-column: 3;
+    justify-self: end;
 }
