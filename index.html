@@ -8,9 +8,14 @@
     <title>Maeve Collins</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="images/star.svg">
 </head>
 
 <body id="top">
+
+<div id="loading-screen">
+    <img src="images/star.svg" alt="" class="loading-star">
+</div>
 
 <header>
     <a href="#top" class="logo">MAEVE COLLINS</a>
@@ -401,5 +406,13 @@
 
 
 </body>
+
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.getElementById("loading-screen").classList.add("loaded");
+        }, 1500);
+    });
+</script>
 
 </html>
