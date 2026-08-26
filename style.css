@@ -613,6 +613,7 @@ footer div:nth-child(3) {
     grid-template-columns: 1fr 2fr 1fr;
     min-height: 100vh;
     border-bottom: 1px solid #3f4150;
+  
 }
 
 .cv > * {
@@ -632,6 +633,8 @@ footer div:nth-child(3) {
 
 .cv-intro h1 {
     margin: 0 0 30px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
 }
 
 .cv-section {
